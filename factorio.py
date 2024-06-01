@@ -9,6 +9,10 @@ class Recipe:
     def __repr__(self):
         return f"{self.output_quantity} {self.name}: {self.inputs}"
 
+def basic_materials(recipe):
+    for ingredient, quantity in recipe.inputs:
+        pass
+
 recipes = {}
 
 recipes["copper plate"] = Recipe("copper plate", [("copper ore", 1)])
